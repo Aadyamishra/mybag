@@ -1,3 +1,9 @@
+var express = require ('express');
+var morgan = require ('morgan');
+var path = require ('path');
+var app = express ();
+app.use(morgan('combined'));
+
 var red = [0, 100, 63];
 var orange = [40, 100, 60];
 var green = [75, 100, 40];
@@ -16,3 +22,7 @@ else {
 
 drawName(myName, letterColors);
 bounceBubbles();
+var port = 8080; // Use 8080 for local development because you might already have apache running on 80
+app.listen(8080, function () {
+  console.log(`listening on port ${port}!`);
+});
