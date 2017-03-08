@@ -2,7 +2,7 @@
   "name": "personal",
   "version": "0.1.0",
   "description": "my name app",
-  "bubble": "server.js",
+  "main": "bubble.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
