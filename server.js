@@ -24,7 +24,7 @@ drawName(myName, letterColors);}
 function bounceBubbles(){
 bounceBubbles();}
 
-app.get('/', function (req, res) {
+app.get('index.html', function (req, res) {
   res.sendFile(path.join( 'index.html'));
 });
 app.get('drawName', function (req, res) {
