@@ -13,24 +13,26 @@ var purple = [280, 50, 60];
 var myName = "Meenakshi";
 var letterColors = [red, orange, green, blue, purple];
 
-if(10 < 3) {
-    bubbleShape = 'square';
-}
-else {
-    bubbleShape = 'circle';
-}
 function drawName(){
 drawName(myName, letterColors);}
 function bounceBubbles(){
 bounceBubbles();}
 
-app.get('index.html', function (req, res) {
+if(10 < 3) {
+    (bubbleShape = 'square');
+}
+else {
+    (bubbleShape = 'circle');
+}
+
+
+app.get('/index.html', function (req, res) {
   res.sendFile(path.join( 'index.html'));
 });
-app.get('drawName', function (req, res) {
+app.get('/drawName', function (req, res) {
   res.send(path.join('drawName'));
 });
-app.get('bounceBubbles',function (req, res) {
+app.get('/bounceBubbles',function (req, res) {
     res.send(path.join('bounceBubbles'));
 });
 
