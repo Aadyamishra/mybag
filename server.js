@@ -26,9 +26,13 @@ else {
 }
 
 
-app.get('/index.html', function (req, res) {
+app.get('/', function (req, res) {
   res.sendFile(path.join( 'index.html'));
 });
+app.get('/', function (req, res) {
+  res.sendFile(path.join( 'myCanvas'));
+});
+
 app.get('/drawName', function (req, res) {
   res.send(path.join('drawName'));
 });
